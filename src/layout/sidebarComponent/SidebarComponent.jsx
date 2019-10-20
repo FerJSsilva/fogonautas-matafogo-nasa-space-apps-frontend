@@ -23,7 +23,7 @@ class SidebarComponent extends Component {
   saveViewportDimensions = throttle(() => {
     this.setState({
       viewportWidth: window.innerWidth,
-    })
+    });
   }, 250);
 
   toggleSideBar = () => {
@@ -43,10 +43,10 @@ class SidebarComponent extends Component {
       >
         <div className="custom-sider-head">
           <div>
-            <Icon type="setting" spin />
+            <Icon type="desktop" />
             {
               !this.state.collapsed &&
-              <span className="fade-in"> Odds Reactor</span>
+              <span className="fade-in"> Mata Fogo</span>
             }
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Badge, Col, Dropdown, Icon, Layout, Menu, Row } from 'antd';
+import { Avatar, Badge, Col, Dropdown, Layout, Menu, Row } from 'antd';
 
 const { Header } = Layout;
 
@@ -23,12 +23,12 @@ const HeaderComponent = () => (
     <Row>
       <Col span={24} style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <span>
-          <Badge count={1}><Avatar icon="user" /></Badge>
+          <Badge count={3}><Avatar icon="user" /></Badge>
         </span>
         <div className="user-info">
           <Dropdown overlay={menu} trigger={['click']}>
             <span style={{ marginLeft: '16px' }}>
-              user name <Icon type="down" />
+              Alertas locais
             </span>
           </Dropdown>
         </div>
